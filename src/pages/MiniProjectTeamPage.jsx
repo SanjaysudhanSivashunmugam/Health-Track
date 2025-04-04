@@ -2,60 +2,63 @@ import React from 'react';
 
 const MiniProjectTeamPage = () => {
   // Team details
-  const batchNo = 2025;
-  const year = 2026;
-  const subject = "Mini Project Lab";
-  const projectStatus = "Completed";
+  const batchNo = 7;
+  const year = "2024 - 2025";
+  const subject = "Design Thinking and Mini Project Lab";
+  const projectStatus = "On Going";
   
   // Team members data with portrait-style images
   const teamMembers = [
     {
-      photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=600&q=80',
-      name: 'Sanjay Kumar',
-      rollNo: '20251001',
-      branch: 'Computer Science',
-      year: '2nd Year',
-      role: 'Team Lead',
-      responsibilities: 'Backend Development, Project Coordination'
+      photo: '/t1.png',
+      name: 'Sanjaysudhan S',
+      rollNo: '727722EUMC094',
+      branch: 'Mechanical Engineering',
+      year: '3rd Year',
+      role: 'Software Developer',
+      responsibilities: 'Frontend Development, Backend Development, Database Intergration',
+      linkedin: "https://www.linkedin.com/in/sanjaysudhan-sivashunmugam-a5a901255/"
     },
     {
       photo: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=600&q=80',
-      name: 'Priya Sharma',
-      rollNo: '20251002',
-      branch: 'Computer Science',
-      year: '2nd Year',
-      role: 'Frontend Developer',
-      responsibilities: 'UI/UX Design, React Implementation'
+      name: 'Sakthivel C',
+      rollNo: '727722EUMC091',
+      branch: 'Mechanical Engineering',
+      year: '3rd Year',
+      role: 'Team Lead',
+      responsibilities: 'IOT, Hardware Intergration, Server and Database Management',
+      linkedin: "https://www.linkedin.com/in/sakthivel-chermachsamy/"
     },
     {
-      photo: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=600&q=80',
-      name: 'Rahul Verma',
-      rollNo: '20251003',
-      branch: 'Computer Science',
-      year: '2nd Year',
-      role: 'Database Specialist',
-      responsibilities: 'Database Design, API Integration'
+      photo: '/t2.jpg',
+      name: 'Ragul Kumar R',
+      rollNo: '727723EUMC515',
+      branch: 'Mechanical Engineering',
+      year: '3rd Year',
+      role: 'Design Engineer',
+      responsibilities: 'CAD Design, 3D Printing',
+      linkedin: "https://www.linkedin.com/in/ragul-kumar-r-68a845332"
     }
   ];
 
   // Mentor details with portrait image
   const mentor = {
-    photo: 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=600&q=80',
-    name: 'Dr. Anjali Patel',
+    photo: '/m.jpg',
+    name: 'Dr. R. Ramamoorthi',
     designation: 'Associate Professor',
-    department: 'Computer Science',
-    email: 'anjali.patel@university.edu',
-    phone: '+91 9876543210'
+    department: 'Mechanical Engineering',
+    email: 'ramamoorthi@skcet.ac.in',
+    phone: '9965599111'
   };
 
   // Project details
   const project = {
-    title: 'Smart Campus Management System',
-    description: 'A comprehensive platform for managing campus activities, student records, and resource allocation.',
-    technologies: 'React, Node.js, MongoDB, Tailwind CSS',
+    title: 'Design & Fabrication of IOT Based Health Monitoring System',
+    description: 'This project focuses on designing an IoT-based health monitoring system that tracks vital signs like temperature, heart rate, and oxygen levels. The data is uploaded to the cloud and displayed on a website, enabling real-time remote health monitoring.',
+    technologies: 'React, Node.js, Express.js, Firebase, Tailwind CSS',
     duration: '3 months',
     status: projectStatus,
-    githubRepo: 'https://github.com/example/smart-campus'
+    githubRepo: 'https://github.com/SanjaysudhanSivashunmugam/Health-Track'
   };
 
   return (
@@ -65,7 +68,7 @@ const MiniProjectTeamPage = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-2">{subject} Team</h1>
           <div className="flex justify-center space-x-6 text-gray-600 mb-4">
-            <p><span className="font-medium">Batch:</span> {batchNo}</p>
+            <p><span className="font-medium">Team :</span> {batchNo}</p>
             <p><span className="font-medium">Academic Year:</span> {year}</p>
           </div>
           <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium">
@@ -137,7 +140,7 @@ const MiniProjectTeamPage = () => {
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                 {/* Member Photo - Increased height and portrait style */}
-                <div className="h-72 bg-blue-100 flex items-center justify-center overflow-hidden">
+                <div className="h-[450px] bg-blue-100 flex items-center justify-center overflow-hidden">
                   <img 
                     src={member.photo} 
                     alt={member.name} 
@@ -166,6 +169,7 @@ const MiniProjectTeamPage = () => {
                       <span className="w-20 font-medium">Role:</span>
                       <span className="text-blue-600 font-medium">{member.role}</span>
                     </p>
+                    <a href={member.linkedin}>LinkedIn ID</a>
                   </div>
 
                   <div className="pt-2 border-t border-gray-200">
