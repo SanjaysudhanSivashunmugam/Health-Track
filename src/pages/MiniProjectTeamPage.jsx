@@ -5,7 +5,7 @@ const MiniProjectTeamPage = () => {
   const batchNo = 7;
   const year = "2024 - 2025";
   const subject = "Design Thinking and Mini Project Lab";
-  const projectStatus = "On Going";
+  const projectStatus = "Completed";
   
   // Team members data with portrait-style images
   const teamMembers = [
@@ -20,7 +20,7 @@ const MiniProjectTeamPage = () => {
       linkedin: "https://www.linkedin.com/in/sanjaysudhan-sivashunmugam-a5a901255/"
     },
     {
-      photo: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=600&q=80',
+      photo: '/t3.jpg',
       name: 'Sakthivel C',
       rollNo: '727722EUMC091',
       branch: 'Mechanical Engineering',
