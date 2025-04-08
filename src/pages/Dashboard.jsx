@@ -880,7 +880,7 @@ const Dashboard = () => {
                 </div>
               </div>
               
-              <div className="bg-gray-100 p-4 rounded-lg print:hidden">
+              {/* <div className="bg-gray-100 p-4 rounded-lg print:hidden">
                 <h3 className="font-semibold mb-2">Report Controls</h3>
                 <p className="text-sm text-gray-600 mb-3">Click to Sync Heart rate and SpO2 and Temperature</p>
                 <button 
@@ -889,7 +889,7 @@ const Dashboard = () => {
                 >
                   Sync Data
                 </button>
-              </div>
+              </div> */}
             </div>
 
             {/* Patient Information */}
